@@ -50,7 +50,8 @@ const generatePoint= () =>{
         point.push(temp);
 
     }
-    console.log("Point:"+point.length);
+    //console.log("Point:"+point.length);
+    document.getElementById("points").innerHTML = `Rendered Points:${point.length}`
 }
 
 const draw = () =>{
@@ -70,7 +71,7 @@ const sliderRefresh= () =>{
    // console.log(`Range:${range}`)
     //console.log(`Scale:${data.scale}`)
     //console.log(`Dif:${dif}`)
-
+    
 }
 
 export const test = () =>{
@@ -87,9 +88,12 @@ export const test = () =>{
     console.log(point)
 }
 
+
+
+
 document.getElementById("range").addEventListener('input',sliderRefresh);
 document.getElementById("scale").addEventListener('input',sliderRefresh);
 document.getElementById("dif").addEventListener('input',sliderRefresh);
 document.getElementById("gumb").addEventListener('click',sliderRefresh);
-
+document.getElementById("good").addEventListener('input',sliderRefresh);
 test()

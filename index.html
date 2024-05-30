@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <input type="text" name="ex" id="ex"><br>
-    <input type="range" min="1" max="1000" value="50" class="slider" id="range" width="200px">
-    <input type="range" min="1" max="100" value="50" class="slider" id="scale" width="200px">
-    <input type="range" min="1" max="1000" value="50" class="slider" id="dif" width="200px">
-    <input type="submit" value="Nacrtaj" id="gumb">
-    <input type="checkbox" name="" id="good">
-    <br>
-    <canvas id="canv" width="1000" height="800" style="border: 1px black solid"></canvas>
+    <div id="input-container">
+        <h1>Graph plotter demo</h1>
+        <input type="text" name="ex" id="ex"><br>
+        <label for="range">Steps</label>
+        <input type="range" min="1" max="1000" value="50" class="slider" id="range"><br>
+        <label for="scale">Zoom</label>
+        <input type="range" min="1" max="100" value="50" class="slider" id="scale"><br>
+        <label for="dif">Point distance</label>
+        <input type="range" min="1" max="1000" value="50" class="slider" id="dif"><br>
+        <label>Optimisation</label>
+        <input type="checkbox" name="" id="good"><br>
+        <input type="submit" value="Nacrtaj" id="gumb">
+        <p id="points"></p>
+    </div>
+    <canvas id="canv" width="800" height="600"></canvas>
     <script src="./js/main.js" type="module"></script>
     <script src="./js/dot.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/evaluatex/dist/evaluatex.min.js"></script>
 </body>
 </html>
-
-<script src="https://cdn.jsdelivr.net/npm/evaluatex/dist/evaluatex.min.js"></script>
