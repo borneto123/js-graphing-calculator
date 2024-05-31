@@ -11,14 +11,20 @@
     <div id="input-container">
         <h1>Graph plotter demo</h1>
         <input type="text" name="ex" id="ex"><br>
-        <label for="range">Steps</label>
-        <input type="range" min="1" max="1000" value="50" class="slider" id="range"><br>
+        <label for="range">Points</label>
+        <input type="range" min="1" max="500" value="50" class="slider" id="range"><br>
         <label for="scale">Zoom</label>
         <input type="range" min="1" max="100" value="50" class="slider" id="scale"><br>
         <label for="dif">Point distance</label>
         <input type="range" min="1" max="1000" value="50" class="slider" id="dif"><br>
+        <label style="display: none;" for="scale">ParmX</label>
+        <input style="display: none;" type="range" min="-2000" max="2000" value="50" class="slider" id="parmX"><br>
+        <label style="display: none;" for="scale">ParmY</label>
+        <input style="display: none;" type="range" min="-2000" max="2000" value="50" class="slider" id="parmY"><br>
         <label>Optimisation</label>
         <input type="checkbox" name="" id="good"><br>
+        <label>Curve</label>
+        <input type="checkbox" name="" id="curve"><br>
         <input type="submit" value="Nacrtaj" id="gumb">
         <p id="points"></p>
     </div>
